@@ -1,0 +1,23 @@
+.numpad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: .7rem;
+    column-gap: .5rem;
+    grid-template-areas: 
+    "key key key key"
+    "key key key key"
+    "key key key key"
+    "key key key key"
+    "r r e e";
+    background-color: var(--keypad-toggle-background);
+    margin-top: 3rem;
+    padding: 1rem;
+}
+
+.reset {
+    grid-area: r;
+}
+
+.equals {
+    grid-area: e;
+}

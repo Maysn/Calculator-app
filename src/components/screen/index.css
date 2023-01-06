@@ -1,0 +1,14 @@
+.screen {
+    display: flex;
+    justify-content: flex-end;
+    height: 70px;
+    background-color: var(--screen-background);
+}
+
+.screen > input {
+    text-align: end;
+    background: transparent;
+    color: white;
+    margin-right: 1rem;
+    border: none;
+}

@@ -1,0 +1,15 @@
+.calc-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.theme-switch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+}
+
+.theme-switch > p {
+    font-size: 15px;
+}
