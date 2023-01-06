@@ -3,7 +3,20 @@ import React from "react";
 
 function NumPad({ operation, setOperation }) {
   const handleClick = (e) => {
-    setOperation((current) => current.concat(e.target.value));
+    return setOperation((current) => current.concat(e.target.value));
+  };
+
+  const handleOperation = (equation) => {
+    const result = eval(equation);
+    return setOperation(result.toString());
+  };
+
+  const handleDEL = (equation) => {
+    return setOperation(equation.slice(0, -1));
+  };
+
+  const handleRESET = () => {
+    return setOperation("");
   };
   return (
     <div className="numpad">
@@ -16,7 +29,11 @@ function NumPad({ operation, setOperation }) {
       <button className="key" value={9} onClick={handleClick}>
         9
       </button>
-      <button className="key" value={"DEL"} onClick={handleClick}>
+      <button
+        className="key"
+        value={"DEL"}
+        onClick={() => handleDEL(operation)}
+      >
         DEL
       </button>
       <button className="key" value={4} onClick={handleClick}>
@@ -55,8 +72,12 @@ function NumPad({ operation, setOperation }) {
       <button className="key" value={"*"} onClick={handleClick}>
         x
       </button>
-      <button className="reset">RESET</button>
-      <button className="equals" value={"="}>
+      <button className="reset" onClick={handleRESET} >RESET</button>
+      <button
+        className="equals"
+        value={"="}
+        onClick={() => handleOperation(operation)}
+      >
         =
       </button>
     </div>
