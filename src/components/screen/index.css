@@ -1,15 +1,20 @@
 .screen {
     display: flex;
     justify-content: flex-end;
-    height: 70px;
     background-color: var(--screen-background);
+    min-height: 5.5rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+
 }
 
 .screen > input {
+    font-size: 40px;
+    font-family: 'League Spartan', sans-serif;
     text-align: end;
+    color: var(--primary-text);
     background: transparent;
-    color: white;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
     border: none;
     width: 100%;
 }

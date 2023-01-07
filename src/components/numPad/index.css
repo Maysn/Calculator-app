@@ -10,15 +10,20 @@
     "key key key key"
     "r r e e";
     background-color: var(--keypad-toggle-background);
-    margin-top: 3rem;
-    padding: 1rem;
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    min-height: 420px;
+    border-radius: 10px;
 }
 
 .key {
     position: relative;
-    background-color: var(--key-background);
-    height: 3.5rem;
-    width: 3.5rem;
+    color: var(--primary-text);
+    background-color: var(--key-background-three);
+    height: 4rem;
+    width: 3.7rem;
+    font-size: 32px;
+    font-family: 'League Spartan', sans-serif;
     border: none;
     border-radius: 5px;
 }
@@ -26,7 +31,7 @@
 .key::before {
     position: absolute;
     content: '';
-    background-color: var(--key-shadow);
+    background-color: var(--key-shadow-three);
     height: 5px;
     width: 100%;
     right: 0;
@@ -36,10 +41,36 @@
     border-bottom-left-radius: 25px;
 }
 
+.del {
+    font-size: 1.25rem;
+    color: var(--secondary-text);
+    background-color: var(--key-background-one);
+}
+
+.del::before {
+    background-color: var(--key-shadow-one);
+}
+
 .reset {
     grid-area: r;
+    width: 97%;
+    font-size: 1.25rem;
+    color: var(--secondary-text);
+    background-color: var(--key-background-one);
+}
+
+.reset::before {
+    background-color: var(--key-shadow-one);
 }
 
 .equals {
     grid-area: e;
+    width: 97%;
+    font-size: 1.25rem;
+    color: var(--secondary-text);
+    background-color: var(--key-background-two);
+}
+
+.equals::before {
+    background-color: var(--key-shadow-two);
 }

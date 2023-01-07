@@ -30,7 +30,7 @@ function NumPad({ operation, setOperation }) {
         9
       </button>
       <button
-        className="key"
+        className="key del"
         value={"DEL"}
         onClick={() => handleDEL(operation)}
       >
@@ -72,9 +72,9 @@ function NumPad({ operation, setOperation }) {
       <button className="key" value={"*"} onClick={handleClick}>
         x
       </button>
-      <button className="reset" onClick={handleRESET} >RESET</button>
+      <button className="key reset" onClick={handleRESET} >RESET</button>
       <button
-        className="equals"
+        className="key equals"
         value={"="}
         onClick={() => handleOperation(operation)}
       >
