@@ -2,3 +2,33 @@
     height: 100%;
     width: 100%;
 }
+
+@media only screen and (min-width: 500px){
+    .calculator {
+        width: 65%;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .calculator {
+        width: 50%;
+        margin-top: 1rem;
+    }
+}
+@media only screen and (min-width: 768px){
+    .calculator {
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .calculator {
+        width: 35%;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    .calculator {
+        width: 28%;
+    }
+}
