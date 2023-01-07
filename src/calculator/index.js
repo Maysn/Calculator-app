@@ -12,8 +12,8 @@ function Calculator({ theme, setTheme }) {
   return (
     <div className="calculator">
       <Top theme={theme} setTheme={setTheme} />
-      <Screen operation={operation} />
-      <NumPad operation={operation} setOperation={setOperation} />
+      <Screen theme={theme} operation={operation} />
+      <NumPad theme={theme} operation={operation} setOperation={setOperation} />
     </div>
   );
 }

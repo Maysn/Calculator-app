@@ -4,7 +4,7 @@ import Switch from "../switch/index";
 
 function Top({ theme, setTheme }) {
   return (
-    <div className="calc-top">
+    <div className="calc-top" style={{color: theme === 'Theme1'? 'hsl(0, 0%, 100%)': ''}}>
       <h3 className="calc">calc</h3>
       <div className="theme-switch">
         <p>THEME</p>

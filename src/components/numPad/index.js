@@ -1,7 +1,7 @@
 import "./index.css";
 import React from "react";
 
-function NumPad({ operation, setOperation }) {
+function NumPad({ operation, setOperation, theme }) {
   const handleClick = (e) => {
     return setOperation((current) => current.concat(e.target.value));
   };
@@ -31,6 +31,7 @@ function NumPad({ operation, setOperation }) {
       </button>
       <button
         className="key del"
+        style={{ color: theme === "Theme3" ? "hsl(0, 0%, 100%)" : "" }}
         value={"DEL"}
         onClick={() => handleDEL(operation)}
       >
@@ -72,7 +73,13 @@ function NumPad({ operation, setOperation }) {
       <button className="key" value={"*"} onClick={handleClick}>
         x
       </button>
-      <button className="key reset" onClick={handleRESET} >RESET</button>
+      <button
+        className="key  reset"
+        style={{ color: theme === "Theme3" ? "hsl(0, 0%, 100%)" : "" }}
+        onClick={handleRESET}
+      >
+        RESET
+      </button>
       <button
         className="key equals"
         value={"="}
