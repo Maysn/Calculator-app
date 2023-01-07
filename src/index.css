@@ -29,7 +29,7 @@ code {
   --key-shadow: hsl(224, 28%, 35%);
 
   --key-background-toggle: hsl(6, 63%, 50%);
-  --key-shadow: hsl(6, 70%, 34%);
+  --toggle-key-shadow: hsl(6, 70%, 34%);
 
   --key-background: hsl(30, 25%, 89%);
   --key-shadow: hsl(28, 16%, 65%);
@@ -50,7 +50,7 @@ code {
   --key-shadow: hsl(185, 58%, 25%);
 
   --key-background-toggle: hsl(25, 98%, 40%);
-  --key-shadow: hsl(25, 99%, 27%);
+  --toggle-key-shadow: hsl(25, 99%, 27%);
 
   --key-background: hsl(45, 7%, 89%);
   --key-shadow: hsl(35, 11%, 61%);
@@ -62,19 +62,19 @@ code {
 
 .Theme3 {
   /* Backgrounds */
-  --main-background: hsl(268, 75%, 9%)
+  --main-background: hsl(268, 75%, 9%);
   --keypad-toggle-background: hsl(268, 71%, 12%);
-  --screen-background: hsl(268, 71%, 12%)
+  --screen-background: hsl(268, 71%, 12%);
 
   /* Keys */
-  --key-background: hsl(281, 89%, 26%)
+  --key-background: hsl(281, 89%, 26%);
   --key-shadow: hsl(285, 91%, 52%);
 
   --key-background-toggle: hsl(176, 100%, 44%);
-  --key-shadow: hsl(177, 92%, 70%)
+  --toggle-key-shadow: hsl(177, 92%, 70%);
 
   --key-background: hsl(268, 47%, 21%);
-  --key-shadow: hsl(290, 70%, 36%)
+  --key-shadow: hsl(290, 70%, 36%);
 
   /* Text */
   --primary-text: hsl(52, 100%, 62%);

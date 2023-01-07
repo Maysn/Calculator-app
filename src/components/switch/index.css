@@ -1,9 +1,10 @@
 .tri-state-toggle > input {
-    height: 20px;
-    width: 20px;
-    appearance: none;
-    background-color: black;
-    border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  margin-left: 5px;
+  appearance: none;
+  background-color: var(--key-background-toggle);
+  border-radius: 50%;
   }
 
   input:hover {
@@ -13,20 +14,26 @@
   .tri-state-toggle {
     position: relative;
     display: flex;
-    justify-content: center;
-    border: 3px solid black;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--keypad-toggle-background);
     border-radius: 50px;
-    /* height: 25px; */
-    /* width: 70px; */
-    /* margin-top: 3rem; */
+    height: 25px;
+    width: 70px;
   }
 
-  .tri-state-toggle::before {
+  /* .tri-state-toggle::before {
     content: '1 2 3';
     position: absolute;
     font-size: 15px;
     bottom: 100%;
+    margin-left: 10px;
+    margin-bottom: 3px;
   }
+
+  .tri-state-toggle::before:not(:first-child){
+    padding: 3rem;
+  } */
 
   .visible {
     opacity: 1;

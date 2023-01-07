@@ -14,6 +14,28 @@
     padding: 1rem;
 }
 
+.key {
+    position: relative;
+    background-color: var(--key-background);
+    height: 3.5rem;
+    width: 3.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.key::before {
+    position: absolute;
+    content: '';
+    background-color: var(--key-shadow);
+    height: 5px;
+    width: 100%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
 .reset {
     grid-area: r;
 }

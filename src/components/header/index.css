@@ -1,15 +1,30 @@
 .calc-top {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 2rem;
 }
 
 .theme-switch {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 150px;
+    width: 135px;
 }
 
 .theme-switch > p {
     font-size: 15px;
+}
+
+.switch {
+    position: relative;
+}
+
+.theme-number {
+    position: absolute;
+    bottom: 100%;
+    font-size: 1rem;
+}
+
+.theme-number > span {
+    margin-left: .7rem;
 }

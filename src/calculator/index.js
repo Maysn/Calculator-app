@@ -4,14 +4,14 @@ import Top from "../components/header";
 import Screen from "../components/screen";
 import NumPad from "../components/numPad";
 
-function Calculator(props) {
+function Calculator({ theme, setTheme }) {
   const [operation, setOperation] = useState("");
   useEffect(() => {
     console.log(operation);
   }, [operation]);
   return (
     <div className="calculator">
-      <Top />
+      <Top theme={theme} setTheme={setTheme} />
       <Screen operation={operation} />
       <NumPad operation={operation} setOperation={setOperation} />
     </div>
