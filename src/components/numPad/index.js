@@ -7,8 +7,7 @@ function NumPad({ operation, setOperation, theme }) {
   };
 
   const handleOperation = (equation) => {
-    const result = Function("return " + operation);
-    console.log(result);
+    const result = Function("return " + equation);
     return setOperation(result().toString());
   };
 

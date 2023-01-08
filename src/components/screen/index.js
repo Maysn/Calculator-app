@@ -7,6 +7,7 @@ function Screen({ theme, operation }) {
         type="text"
         style={{ color: theme === "Theme1" ? "hsl(0, 0%, 100%)" : "" }}
         value={operation}
+        maxLength="19"
         readOnly
       />
     </div>
